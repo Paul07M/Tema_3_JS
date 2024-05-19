@@ -1,0 +1,37 @@
+// EX.1: Scrieți o funcție care creează un obiect pentru a păstra informații despre rețeta ta preferată
+
+//Ar trebui să aibă proprietăți pentru titlu (un șir de caractere), porții (un număr) și ingrediente (o șir de elemente - array). Va fi afișată pe rânduri separate (o instrucțiune console.log pentru fiecare) toate informațiile obiectului după crearea acestuia.
+
+//Exemplu 1:
+
+//Input: titlu = “Pizza”, portii = 3, ingrediente = [“sunca”, “cas”, “ketchup”]
+
+//Output: { titlu: “Pizza”, portii: 3, ingrediente: [”sunca”, “cas”, “ketchup”] }
+
+// Varianta 1 :
+
+const MyRecipe = {
+    title: "Clatite clasice frantuzesti",
+    category: "Desert",
+    portion: 20,
+    ingredients: [`500 ml lapte`, `280 g faina`, `100 ml apa minerala`, `50 g unt`, `6 oua`, `1 lingurita esenta de vanilie`, `1 praf sare`],
+};
+
+console.log(JSON.stringify(MyRecipe));
+
+//Varianta 2 :
+
+function recipeComponents(title, category, portion, ingredients) {
+    const recipe = {
+        title: title,
+        category: category,
+        portion: portion,
+        ingredients: ingredients,
+    };
+
+    return recipe;
+}
+
+const CrepeRecipe = recipeComponents('Clatite clasice frantuzesti', 'Desert', 20, [`500 ml lapte`, `280 g faina`, `100 ml apa minerala`, `50 g unt`, `6 oua`, `1 lingurita esenta de vanilie`, `1 praf sare`]);
+
+console.log(CrepeRecipe);
