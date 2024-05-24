@@ -8,7 +8,20 @@
 
 //Output: { a: 1 }
 
-//Exemplul 1
+
+function removeProperties(car, model) {
+
+    const newcar = { ...car };
+
+    model.forEach(model => {
+
+        delete newcar[model];
+
+    });
+
+    return newcar;
+
+}
 
 const car = {
     marke: 'Porsche',
@@ -16,7 +29,9 @@ const car = {
     year: 1998,
 }
 
-delete car.model;
-console.log(car);
+const propertieToRemove = [`model`];
 
-//Cum as putea face exercitiul in alt mod?
+const resultCar = removeProperties(car, propertieToRemove);
+
+console.log(resultCar);
+
