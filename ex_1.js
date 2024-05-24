@@ -31,8 +31,3 @@ function recipeComponents(title, category, portion, ingredients) {
 
 const crepeRecipe = recipeComponents('Clatite clasice frantuzesti', 'Desert', 20, [`500 ml lapte`, `280 g faina`, `100 ml apa minerala`, `50 g unt`, `6 oua`, `1 lingurita esenta de vanilie`, `1 praf sare`]);
 
-
-
-const CrepeRecipe = recipeComponents('Clatite clasice frantuzesti', 'Desert', 20, [`500 ml lapte`, `280 g faina`, `100 ml apa minerala`, `50 g unt`, `6 oua`, `1 lingurita esenta de vanilie`, `1 praf sare`]);
-
-console.log(CrepeRecipe);
