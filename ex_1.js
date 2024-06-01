@@ -8,6 +8,18 @@
 
 //Output: { titlu: “Pizza”, portii: 3, ingrediente: [”sunca”, “cas”, “ketchup”] }
 
+// Varianta 1 :
+
+const MyRecipe = {
+    title: "Clatite clasice frantuzesti",
+    category: "Desert",
+    portion: 20,
+    ingredients: [`500 ml lapte`, `280 g faina`, `100 ml apa minerala`, `50 g unt`, `6 oua`, `1 lingurita esenta de vanilie`, `1 praf sare`],
+};
+
+console.log(JSON.stringify(MyRecipe));
+
+//Varianta 2 :
 
 function recipeComponents(title, category, portion, ingredients) {
     const recipe = {
@@ -16,14 +28,6 @@ function recipeComponents(title, category, portion, ingredients) {
         portion: portion,
         ingredients: ingredients,
     };
-
-    console.log("Title: " + recipe.title);
-    console.log("Category: " + recipe.category);
-    console.log("Portion: " + recipe.portion);
-    console.log("Ingredients : ");
-    recipe.ingredients.forEach(ingredients => {
-        console.log(` - ` + ingredients);
-    });
 
     return recipe;
 }
