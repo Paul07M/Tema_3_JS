@@ -7,6 +7,7 @@
 //Input: obiect = { a: 1, b: 2 }, proprietate = “b”
 
 //Output: { a: 1 }
+//
 
 
 function removeProperties(car, model) {
