@@ -23,9 +23,7 @@ function recipeComponents(title, category, portion, ingredients) {
     console.log("Ingredients : ");
     recipe.ingredients.forEach(ingredients => {
         console.log(` - ` + ingredients);
-
     });
-
 
     return recipe;
 }
