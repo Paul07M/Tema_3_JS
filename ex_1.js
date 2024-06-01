@@ -10,17 +10,6 @@
 
 // Varianta 1 :
 
-const MyRecipe = {
-    title: "Clatite clasice frantuzesti",
-    category: "Desert",
-    portion: 20,
-    ingredients: [`500 ml lapte`, `280 g faina`, `100 ml apa minerala`, `50 g unt`, `6 oua`, `1 lingurita esenta de vanilie`, `1 praf sare`],
-};
-
-console.log(JSON.stringify(MyRecipe));
-
-//Varianta 2 :
-
 function recipeComponents(title, category, portion, ingredients) {
     const recipe = {
         title: title,
